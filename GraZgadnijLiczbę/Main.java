@@ -1,4 +1,4 @@
-package pl.coderslab.warsztaty1.GraZgadnijLiczbę;
+package GraZgadnijLiczbę;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -9,9 +9,10 @@ public class Main {
         Random random = new Random();
         int number = random.nextInt(100) + 1;
 
-        System.out.println("Wylosowałem liczbę, zgadnij jaką");
+        System.out.println("Zgadnij liczbę od 1 do 100");
         int count = 0;
         boolean win = false;
+
         while (!win ) {
             int numberGuess = wczytajLiczbe();
             if (numberGuess < number) {
